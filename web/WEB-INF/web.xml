@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <display-name>login</display-name>
+    <servlet>
+        <description/>
+        <display-name>LoginController</display-name>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>spl.servlet.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <description/>
+        <display-name>LogoutController</display-name>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>spl.servlet.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/LogoutController</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <description/>
+        <display-name>UserController</display-name>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>spl.servlet.UserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/UserController</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <description/>
+        <display-name>AddUserController</display-name>
+        <servlet-name>AddUserController</servlet-name>
+        <servlet-class>spl.servlet.AddUserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserController</servlet-name>
+        <url-pattern>/AddUserController</url-pattern>
+    </servlet-mapping>
+</web-app>
